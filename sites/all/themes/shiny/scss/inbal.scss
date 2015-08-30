@@ -1,0 +1,36 @@
+.view-commerce-backoffice-product-variations{
+  input.form-submit{
+    float: left;
+  }
+  .form-item-price label{
+    height: 25px;
+    position: relative !important;
+  }
+}
+
+div.views-megarow-content .form-item label{
+    float: right;
+    padding-left: 5px;
+    width: auto;
+}
+
+.commerce-backoffice-view div.views-megarow-content .container-inline .form-item{
+  float: right;
+}
+
+.filter-wrapper{
+  display: none;
+}
+
+.ief-product-details .form-item label.option{
+  margin-right: 0px;
+}
+
+input.form-radio{
+  float: right;
+}
+
+.ief-product-details .form-type-radio, .ief-product-details .form-type-checkbox{
+  float: right;
+}
+

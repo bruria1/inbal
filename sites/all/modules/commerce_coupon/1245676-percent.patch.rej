@@ -1,0 +1,70 @@
+--- modules/basic/commerce_coupon_basic.module
++++ modules/basic/commerce_coupon_basic.module
+@@ -61,6 +61,15 @@
+         ),
+       ),
+ 
++      'default_value' => array(
++        array(
++          'amount' => 0,
++          'currency_code' => commerce_default_currency(),
++          'data' => array(
++            'components' => array(),
++          ),
++        ),
++      ),
+       'display' => array(),
+     );
+ 
+@@ -72,8 +81,6 @@
+     }
+   }
+ 
+-
+-
+   // Look for or add the specified percentage amount
+   $field_name = 'commerce_coupon_percent_amount';
+   $field = field_info_field($field_name);
+@@ -82,13 +89,15 @@
+   if (empty($field) || $reset) {
+     $field_data = array(
+       'field_name' => $field_name,
+-      'type' => 'number_float',
++      'type' => 'number_decimal',
+       'label' => t('Percentage Amount'),
+       'cardinality' => 1,
+       'entity_types' => array($entity_type),
+       'translatable' => FALSE,
+       'locked' => FALSE,
+       'settings' => array(
++        'precision' => '10',
++        'scale' => '2',
+         'decimal_separator' => '.',
+       ),
+     );
+@@ -113,6 +122,7 @@
+       'settings' => array(
+         'min' => '0',
+         'max' => '100',
++        'suffix' => '%',
+       ),
+     );
+ 
+@@ -124,8 +134,7 @@
+     }
+   }
+ 
+-
+-  // Look for or add the specified percentage amount
++  // Look for or add the specified number of uses amount
+   $field_name = 'commerce_coupon_number_of_uses';
+   $field = field_info_field($field_name);
+   $instance = field_info_instance($entity_type, $field_name, $bundle);
+@@ -169,7 +178,6 @@
+       ),
+     );
+ 
+-
+     if (empty($instance)) {
+       field_create_instance($instance_data);
+     }

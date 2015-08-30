@@ -1,0 +1,5 @@
+
+name = Or Schapira configuration module
+core = 7.x
+package = Tikke
+files[]= or.module

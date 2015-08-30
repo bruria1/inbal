@@ -1,0 +1,44 @@
+<?php
+/**
+*
+* change the mailchimp form fields
+*
+*
+*function or_form_mailchimp_signup_subscribe_block_main_chimp_block_form_alter(&$form, &$form_state){
+* 
+*  $form["mailchimp_lists"]["mailchimp_282281"]["subscribe"]["#attributes"]['checked'] = 'checked';
+*  $temp = $form["mailchimp_lists"];
+*  unset($form["mailchimp_lists"]);
+*  $form["mailchimp_lists"] = $temp;
+*}
+*
+ * Implements hook_commerce_price_formatted_components_alter().
+ * this fix translation issue for the string "Order total" in checkout page 
+ * more info: https://www.drupal.org/node/1121722#comment-9472513
+ */
+function or_commerce_price_formatted_components_alter(&$components, $price, $entity) {
+  foreach ($components as &$component) {
+    $component['title'] = t($component['title']);
+  }
+}
+/**
+ * Implements hook_commerce_shipping_service_rate_options_alter()
+ * for ordering the shipping services
+ *
+*function or_commerce_shipping_service_rate_options_alter(&$options, $order) {
+*    // If there is more than one shipping service available, sort them by line item unit price
+*    if (count($order->shipping_rates) > 1) {
+*        // Collect rates from line items
+*        $service_prices = array();
+*        foreach ($order->shipping_rates as $service => $line_item) {
+*            $line_item_wrapper = entity_metadata_wrapper('commerce_line_item', $line_item);
+*            $unit_price = $line_item_wrapper->commerce_unit_price->value();
+*          $service_prices[$service] = $unit_price['amount'];
+*        }
+*
+*        // array_multisort can be used here because $options and $order->shipping_rates contain the same number of elements (i.e. services).
+*        array_multisort($service_prices, SORT_NUMERIC, SORT_ASC, $options);
+*    }
+*}
+*/
+?>

@@ -1,0 +1,78 @@
+--- commerce_coupon.rules.inc
++++ commerce_coupon.rules.inc
+@@ -177,14 +177,20 @@
+   if (!($commerce_coupon_log instanceof EntityMetadataWrapper)) {
+     $commerce_coupon_log = entity_metadata_wrapper('commerce_coupon_log', $commerce_coupon_log);
+   }
+-  
+   $coupon = commerce_coupon_load($commerce_coupon_log->coupon_id->value());
++  $coupon_wrapper = entity_metadata_wrapper('commerce_coupon', $coupon);
+ 
+-  // Set the unit price on the line item object.
+-  $commerce_coupon_log->commerce_granted_amount->amount = $amount;
+-  $commerce_coupon_log->commerce_granted_amount->currency_code = $currency_code;
++  // Special handling for percent amounts.
++  if ($coupon_wrapper->commerce_coupon_percent_amount->value()) {
++    $percent = $coupon_wrapper->commerce_coupon_percent_amount->value();
++    $commerce_coupon_log->commerce_granted_amount->amount = $amount * ($percent / 100);
++    $commerce_coupon_log->commerce_granted_amount->currency_code = $currency_code;
++  }
++  else {
++    $commerce_coupon_log->commerce_granted_amount->amount = $amount;
++    $commerce_coupon_log->commerce_granted_amount->currency_code = $currency_code;
++  }
+ 
+-  
+   // Add the base price to the components array.
+   if (!commerce_price_component_load($commerce_coupon_log->commerce_granted_amount->value(), 'commerce_coupon_' . $coupon->type)) {
+     $commerce_coupon_log->commerce_granted_amount->data = commerce_price_component_add(
+@@ -195,27 +201,32 @@
+       FALSE
+     );
+   }
+-  
++
+   commerce_coupon_log_save($commerce_coupon_log->value());
+-  
++
+ 
+ }
+ 
+ function commerce_coupon_action_create_coupon_line_item($commerce_coupon, $commerce_order, $amount, $currency_code) {
+-  
+   if (!($commerce_order instanceof EntityMetadataWrapper)) {
+     $commerce_order = entity_metadata_wrapper('commerce_order', $commerce_order);
+   }
+-  
+-  
++
+   $line_item = commerce_coupon_line_item_new($commerce_coupon, $commerce_order->order_id->value());
+-  
++
+   $line_item_wrapper = entity_metadata_wrapper('commerce_line_item', $line_item);
++  $coupon_wrapper = entity_metadata_wrapper('commerce_coupon', $commerce_coupon);
+ 
+-  // Set the unit price on the line item object.
+-  $line_item_wrapper->commerce_unit_price->amount = $amount * -1;
+-  $line_item_wrapper->commerce_unit_price->currency_code = $currency_code;
+-  
++  // Special handling for percent amounts.
++  if ($coupon_wrapper->commerce_coupon_percent_amount->value()) {
++    $percent = $coupon_wrapper->commerce_coupon_percent_amount->value();
++    $line_item_wrapper->commerce_unit_price->amount = $amount * ($percent / 100) * -1;
++    $line_item_wrapper->commerce_unit_price->currency_code = $currency_code;
++  }
++  else {
++    $line_item_wrapper->commerce_unit_price->amount = $amount * -1;
++    $line_item_wrapper->commerce_unit_price->currency_code = $currency_code;
++  }
+ 
+   // Add the base price to the components array.
+   if (!commerce_price_component_load($line_item_wrapper->commerce_unit_price->value(), 'commerce_coupon_' . $commerce_coupon->type)) {
+@@ -240,6 +251,3 @@
+ function commerce_coupon_action_get_coupon_uses($commerce_coupon) {
+   return array('number_of_uses' => commerce_coupon_get_number_of_uses($commerce_coupon->coupon_id));
+ }
+-
+-
+-

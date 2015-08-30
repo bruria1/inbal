@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+* Implements hook_form_FORM_ID_alter().
+*/
+
+function inbal_order_views_query_alter(&$view, &$query) {
+    if ($view->name =='portfolio'){
+              $query->where[] = array(
+            'conditions' => array(
+                '0'=> array(
+                    'field' => 'taxonomy_index.tid',
+                    'value' => $view->args[0],
+                    'operator' => '='
+                )
+            ),
+            'args' => array(),
+            'type' => 'AND'
+        );
+    }
+}
+?>
+
