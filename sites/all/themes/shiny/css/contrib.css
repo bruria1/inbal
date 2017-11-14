@@ -115,20 +115,20 @@
 
 .field-widget-inline-entity-form fieldset fieldset .fieldset-wrapper .ief-entity-submit,
 .ief-row-form .ief-entity-submit {
-  background: #2f88cd;
-  background: -moz-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36a2f6), color-stop(100%, #2f88cd));
-  background: -webkit-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -o-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -ms-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: linear-gradient(to bottom, #36a2f6 0%, #2f88cd 100%);
-  border: 1px solid #2f88cd;
+  background: #2F88CD;
+  background: -moz-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36A2F6), color-stop(100%, #2F88CD));
+  background: -webkit-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -o-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -ms-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: linear-gradient(to bottom, #36A2F6 0%, #2F88CD 100%);
+  border: 1px solid #2F88CD;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  -moz-box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
-  -webkit-box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
-  box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
+  -moz-box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
+  -webkit-box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
   font: normal 500 16px/16px "Open Sans", Arial, sans-serif;
   margin-left: 1px;
   margin-top: 1px;
@@ -388,20 +388,20 @@ form table .ief-product-details input.form-radio {
 
 .entity-commerce-order .commerce-backoffice-order-status-form .form-submit,
 .view-commerce-message-messages #commerce-backoffice-message-form input.form-submit {
-  background: #2f88cd;
-  background: -moz-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36a2f6), color-stop(100%, #2f88cd));
-  background: -webkit-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -o-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: -ms-linear-gradient(top, #36a2f6 0%, #2f88cd 100%);
-  background: linear-gradient(to bottom, #36a2f6 0%, #2f88cd 100%);
-  border: 1px solid #2f88cd;
+  background: #2F88CD;
+  background: -moz-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36A2F6), color-stop(100%, #2F88CD));
+  background: -webkit-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -o-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: -ms-linear-gradient(top, #36A2F6 0%, #2F88CD 100%);
+  background: linear-gradient(to bottom, #36A2F6 0%, #2F88CD 100%);
+  border: 1px solid #2F88CD;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  -moz-box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
-  -webkit-box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
-  box-shadow: 0 1px 2px #cccccc, inset 0 1px 1px #7bb8ef;
+  -moz-box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
+  -webkit-box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 1px #7bb8ef;
   font: normal 500 16px/16px "Open Sans", Arial, sans-serif;
   margin-left: 1px;
   margin-top: 1px;
@@ -1077,7 +1077,6 @@ html.js .views-exposed-form .form-item input.throbbing {
     margin-top: -1px;
   }
 }
-
 /* Edit Checkboxes only in Webkit which will render properly. */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .commerce-backoffice-view .vbo-views-form #edit-select .fieldset-wrapper {
@@ -1093,28 +1092,28 @@ html.js .views-exposed-form .form-item input.throbbing {
     border: 1px solid #a1a1a1;
     border-radius: 3px;
     background: #eaeaea;
-    background: -moz-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
-    background: -webkit-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -o-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -ms-linear-gradient(top, white 0%, #eaeaea 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
   }
   .vbo-select-all-markup .vbo-fieldset-select-all input.form-checkbox:checked {
     background-image: url("../images/check.png");
-    background-image: url("../images/check.png"), -moz-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* FF3.6+ */
-    background-image: url("../images/check.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
+    background-image: url("../images/check.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
     /* Chrome,Safari4+ */
-    background-image: url("../images/check.png"), -webkit-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Chrome10+,Safari5.1+ */
-    background-image: url("../images/check.png"), -o-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Opera 11.10+ */
-    background-image: url("../images/check.png"), -ms-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* IE10+ */
     background-image: url("../images/check.png"), linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
     /* IE6-9 */
     background-repeat: no-repeat;
     background-position: center center;
@@ -1131,11 +1130,11 @@ html.js .views-exposed-form .form-item input.throbbing {
     border: 1px solid #a1a1a1;
     border-radius: 3px;
     background: #eaeaea;
-    background: -moz-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
-    background: -webkit-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -o-linear-gradient(top, white 0%, #eaeaea 100%);
-    background: -ms-linear-gradient(top, white 0%, #eaeaea 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
   }
   .form-type-taxonomy-manager-tree input.form-checkbox:focus,
@@ -1145,19 +1144,19 @@ html.js .views-exposed-form .form-item input.throbbing {
   }
   .form-type-taxonomy-manager-tree input.form-checkbox:checked {
     background-image: url("../images/check.png");
-    background-image: url("../images/check.png"), -moz-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* FF3.6+ */
-    background-image: url("../images/check.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
+    background-image: url("../images/check.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
     /* Chrome,Safari4+ */
-    background-image: url("../images/check.png"), -webkit-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Chrome10+,Safari5.1+ */
-    background-image: url("../images/check.png"), -o-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Opera 11.10+ */
-    background-image: url("../images/check.png"), -ms-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/check.png"), -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* IE10+ */
     background-image: url("../images/check.png"), linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
     /* IE6-9 */
     background-repeat: no-repeat;
     background-position: center center;
@@ -1169,19 +1168,19 @@ html.js .views-exposed-form .form-item input.throbbing {
   }
   .form-type-taxonomy-manager-tree input.form-radio:checked {
     background-image: url("../images/radio.png");
-    background-image: url("../images/radio.png"), -moz-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/radio.png"), -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* FF3.6+ */
-    background-image: url("../images/radio.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
+    background-image: url("../images/radio.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
     /* Chrome,Safari4+ */
-    background-image: url("../images/radio.png"), -webkit-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/radio.png"), -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Chrome10+,Safari5.1+ */
-    background-image: url("../images/radio.png"), -o-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/radio.png"), -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* Opera 11.10+ */
-    background-image: url("../images/radio.png"), -ms-linear-gradient(top, white 0%, #eaeaea 100%);
+    background-image: url("../images/radio.png"), -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
     /* IE10+ */
     background-image: url("../images/radio.png"), linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='#eaeaea',GradientType=0 );
     /* IE6-9 */
     background-repeat: no-repeat;
     background-position: center center;
@@ -1197,7 +1196,6 @@ html.js .views-exposed-form .form-item input.throbbing {
     opacity: 1;
   }
 }
-
 /* Bulk Operations Select */
 .vbo-views-form .form-item-operation {
   float: left;
@@ -1259,9 +1257,9 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 /* @group CTools */
 /* @group Buttons */
 .ctools-button-processed {
-  background-image: -moz-linear-gradient(180deg, white 0px, #efeded 100%);
+  background-image: -moz-linear-gradient(180deg, #ffffff 0px, #efeded 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #efefef));
-  background-image: -webkit-linear-gradient(180deg, white 0px, #efeded 100%);
+  background-image: -webkit-linear-gradient(180deg, #ffffff 0px, #efeded 100%);
   background-image: linear-gradient(180deg, #ffffff 0px, #efeded 100%);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1378,7 +1376,7 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 
 .chzn-container-multi .chzn-choices,
 .chosen-container-multi .chosen-choices {
-  background: white url("../images/drop-filter.png") no-repeat right center;
+  background: #fff url("../images/drop-filter.png") no-repeat right center;
   /* LTR */
 }
 
@@ -1423,7 +1421,7 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 .commerce-backoffice-view .chzn-container-single .chzn-single div b,
 .chosen-container-single .chosen-single div b,
 .commerce-backoffice-view .chosen-container-single .chosen-single div b {
-  background: white url("../images/drop-filter.png") no-repeat right center;
+  background: #fff url("../images/drop-filter.png") no-repeat right center;
   /* LTR */
 }
 
@@ -1433,7 +1431,7 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 .chosen-container-single .chosen-single-with-drop div b,
 .commerce-backoffice-view .chosen-container-single .chosen-single-with-drop div b
 .chosen-container-active .chosen-choices {
-  background: white url("../images/drop-filter-up.png") no-repeat right center;
+  background: #fff url("../images/drop-filter-up.png") no-repeat right center;
   /* LTR */
 }
 

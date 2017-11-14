@@ -39,7 +39,7 @@ input.form-radio + label::before {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select.form-select {
     padding: 5px 5px 5px 35px;
-    background: white url("../images/drop-filter-rtl.png") no-repeat left center;
+    background: #fff url("../images/drop-filter-rtl.png") no-repeat left center;
   }
 }
 /* Overlay Styles */

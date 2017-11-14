@@ -38,14 +38,23 @@
     <div class="vegan">
         <?php print render($content['field_recipe_vegan']); ?>
     </div>
-    <?php };
-    print render($content);
+    <?php }; ?>
+    <?php print render($content['field_recipe_image']); ?>
+    <?php print render($content);
   ?>
   <?php if (render($content['field_youtube'])) { ?>
   <div class="video-container">
       <iframe allowfullscreen="" frameborder="0" height="360" src="<?php print $node->field_youtube['und'][0]['value']; ?>" width="640"></iframe>
   </div>
   <?php } ?>
+  <div id="block-views-products-block-8-bottom">
+    <div class="view-products">
+      <?php 
+              $my_block = module_invoke('views', 'block_view', 'products-block_8');?>
+              <?php print render($my_block['content']); 
+      ?>
+    </div>
+  </div>
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>

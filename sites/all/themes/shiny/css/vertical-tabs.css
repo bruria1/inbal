@@ -2,7 +2,7 @@
  * Override of misc/vertical-tabs.css.
  */
 div.vertical-tabs {
-  background: white url(../images/fc.png) repeat-y 0 0;
+  background: #fff url(../images/fc.png) repeat-y 0 0;
   /* LTR */
   border: 1px solid #ccc;
   margin: 10px 0;

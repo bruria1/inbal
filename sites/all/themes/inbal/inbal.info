@@ -85,6 +85,7 @@ scripts[] = js/inbal.js
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
+regions[deals]          = Deals
 regions[top]            = Top
 regions[cart]           = Cart
 regions[header]         = Header
@@ -97,6 +98,8 @@ regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[bottom]         = Page bottom
 regions[footer]         = Footer
+regions[fixed]         = Fixed
+
 
 ; The page_top and page_bottom regions are hidden, which means they will not
 ; show up on the blocks administration page. But they are required in order for

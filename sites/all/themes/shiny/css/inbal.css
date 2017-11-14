@@ -31,3 +31,8 @@ input.form-radio {
 .ief-product-details .form-type-radio, .ief-product-details .form-type-checkbox {
   float: right;
 }
+
+#views-form-orders-admin-page .commerce_payment_example {
+  background-color: red;
+  color: #fff;
+}

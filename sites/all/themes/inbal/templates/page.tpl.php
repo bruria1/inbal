@@ -8,8 +8,10 @@
  */
 ?>
 
+    <?php print render($page['deals']); ?>
 
-    <?php print render($page['cart']); ?>
+    <?php print render($page['fixed']); ?>
+
 <div class="white-wrapper">
     <?php print render($page['header']); ?>
 </div>
@@ -105,6 +107,7 @@
     <div id="top">
       <?php print render($page['top']);?>
     </div>
+<?php print render($page['cart']); ?>
 <div id="page">
 
   <div id="main">

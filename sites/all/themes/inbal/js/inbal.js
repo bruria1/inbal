@@ -38,6 +38,14 @@ $('#mm-blocker').on('click', function() {
 
 });
 */
+
+/************  shipping  **************/
+
+ 
+$('#edit-commerce-shipping-shipping-service-4-ta-own-taking').on('click', function() {
+      $('body').addClass("messengers");
+});
+
 /************  cart  **************/
 
 $('#block-views-shopping-top-manu-block-1 .button-cart').on('click', function() {
@@ -62,6 +70,9 @@ $('.wrapper-page').on('click', function() {
       $('body').removeClass("cart-open");
 });
 
+if ($("div").hasClass("cart-empty-block")){
+    $('body').addClass("empty-cart");
+}
 /*******  store page  *******/
 
 if (($("body").hasClass("page-node-506")) || ($("body").hasClass("section-product-term")) || ($("body").hasClass("section-store-term"))) {
@@ -84,7 +95,27 @@ if ($("body").hasClass("node-type-product")) {
       if ($i>4) { $i=1;}
     });
 
-    var scroll_pos = 0;
+  $('.wrapper-blue .read-more').on('click', function() {
+        $(this).parent().parent().parent().addClass("open");
+        $(this).html("");
+  });
+/*
+   $(".wrapper-blue .views-field-comment-body").each(function(){
+      $width = $(this).children(".field-content").width();
+      if ($width < $(this).width()-80){
+        $(this).parent().addClass("small");
+      }
+   });
+*/
+
+  $('.node-type-product .right-article .right-details .views-label, .node-type-product .right-article .field-name-field-additional-comments .views-label').on('click', function() {
+        $(this).parent().toggleClass("display");
+  });
+
+  $( ".commerce-add-to-cart .form submit" ).wrapInner( "<div class='new'></div>");
+
+
+/*    var scroll_pos = 0;
 
     $(window).scroll(function() {
       scroll_pos = $(this).scrollTop();
@@ -105,7 +136,7 @@ if ($("body").hasClass("node-type-product")) {
         }
 
     });
-
+*/
   
   if($.trim($(".field-name-field-smell-view .field-item").html())==''){
   $("#edit-line-item-fields-field-smell").empty();

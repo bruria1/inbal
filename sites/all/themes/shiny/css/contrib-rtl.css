@@ -93,7 +93,7 @@ commerce-discount-form .field-name-commerce-discount-date .fieldset-wrapper {
 }
 
 .view-commerce-backoffice-orders .views-exposed-form .date-padding .form-item input {
-  background: white url("../images/calendar.png") no-repeat 5% center;
+  background: #fff url("../images/calendar.png") no-repeat 5% center;
 }
 
 .view-commerce-backoffice-orders .views-exposed-form #edit-date-filter-min-wrapper,
@@ -202,7 +202,7 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 }
 
 .chzn-container-multi .chzn-choices {
-  background: white url("../images/drop-filter-rtl.png") no-repeat left center;
+  background: #fff url("../images/drop-filter-rtl.png") no-repeat left center;
 }
 .chzn-container-multi .chzn-choices li {
   float: right;
@@ -211,14 +211,14 @@ html.js .vbo-views-form #edit-select fieldset .fieldset-wrapper {
 .chzn-container-single .chzn-single div b,
 .view-commerce-backoffice-products .chzn-container-single .chzn-single div b,
 .view-commerce-backoffice-orders .chzn-container-single .chzn-single div b {
-  background: white url("../images/drop-filter-rtl.png") no-repeat left center;
+  background: #fff url("../images/drop-filter-rtl.png") no-repeat left center;
 }
 
 .chzn-container-single .chzn-single-with-drop div b,
 .view-commerce-backoffice-products .chzn-container-single .chzn-single-with-drop div b,
 .view-commerce-backoffice-orders .chzn-container-single .chzn-single-with-drop div b,
 .chzn-container-active .chzn-choices {
-  background: white url("../images/drop-filter-up-rtl.png") no-repeat left center;
+  background: #fff url("../images/drop-filter-up-rtl.png") no-repeat left center;
 }
 
 .chzn-container-single .chzn-single span {
