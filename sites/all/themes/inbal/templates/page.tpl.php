@@ -7,8 +7,8 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
     <?php print render($page['deals']); ?>
+
 
     <?php print render($page['fixed']); ?>
 

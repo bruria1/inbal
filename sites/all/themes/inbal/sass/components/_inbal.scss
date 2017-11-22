@@ -40,6 +40,7 @@ $light-gray: #e2eae9;
 $light-blue: #acdbd1;
 $default: #3c3c3c;
 $orange: #ffb947;
+$brown: #3d2314;
 
 a, a:link, a:visited{
   text-decoration: none;
@@ -4071,4 +4072,29 @@ body {
 	@media (max-width: 768px){
    padding-bottom: 44px;
   }
+}
+
+/*****  deals  *******/
+
+.region-deals{
+  width: 100%;
+  background-color: $brown;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  height: 37px;
+  overflow: hidden;
+  .views-field-body{
+    @include width;
+    color: $turkiz; 
+    text-align: left;
+    p{
+      margin: 0;
+    }
+  }
+
+}
+
+.region-deals + .region-fixed + .white-wrapper{
+  margin-top: 37px;
 }
